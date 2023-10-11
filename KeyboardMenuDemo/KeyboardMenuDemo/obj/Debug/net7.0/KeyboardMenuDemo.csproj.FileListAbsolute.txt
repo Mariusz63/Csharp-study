@@ -1,0 +1,14 @@
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\bin\Debug\net7.0\KeyboardMenuDemo.exe
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\bin\Debug\net7.0\KeyboardMenuDemo.deps.json
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\bin\Debug\net7.0\KeyboardMenuDemo.runtimeconfig.json
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\bin\Debug\net7.0\KeyboardMenuDemo.dll
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\bin\Debug\net7.0\KeyboardMenuDemo.pdb
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.AssemblyInfoInputs.cache
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.AssemblyInfo.cs
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.dll
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\refint\KeyboardMenuDemo.dll
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.pdb
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\KeyboardMenuDemo.genruntimeconfig.cache
+F:\Projekty\C# study\Csharp-study\KeyboardMenuDemo\KeyboardMenuDemo\obj\Debug\net7.0\ref\KeyboardMenuDemo.dll

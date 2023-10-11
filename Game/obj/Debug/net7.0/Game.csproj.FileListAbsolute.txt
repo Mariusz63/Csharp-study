@@ -1,0 +1,14 @@
+F:\Projekty\C# study\Csharp-study\Game\bin\Debug\net7.0\Game.exe
+F:\Projekty\C# study\Csharp-study\Game\bin\Debug\net7.0\Game.deps.json
+F:\Projekty\C# study\Csharp-study\Game\bin\Debug\net7.0\Game.runtimeconfig.json
+F:\Projekty\C# study\Csharp-study\Game\bin\Debug\net7.0\Game.dll
+F:\Projekty\C# study\Csharp-study\Game\bin\Debug\net7.0\Game.pdb
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.AssemblyInfoInputs.cache
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.AssemblyInfo.cs
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.dll
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\refint\Game.dll
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.pdb
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\Game.genruntimeconfig.cache
+F:\Projekty\C# study\Csharp-study\Game\obj\Debug\net7.0\ref\Game.dll
