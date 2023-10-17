@@ -1,0 +1,11 @@
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\bin\Debug\net7.0\MazeGenerator.deps.json
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\bin\Debug\net7.0\MazeGenerator.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\bin\Debug\net7.0\MazeGenerator.pdb
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.AssemblyInfoInputs.cache
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.AssemblyInfo.cs
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\refint\MazeGenerator.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\MazeGenerator.pdb
+F:\Projekty\C# study\Csharp-study\LabirintGame\MazeGenerator\obj\Debug\net7.0\ref\MazeGenerator.dll

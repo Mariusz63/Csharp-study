@@ -87,7 +87,7 @@ namespace Game
                 }
 
                 // we waiting for completing an asynchronous task
-                Dictionary<int,char>[] rays = await Task.WhenAll(rayCastingTasks); 
+                Dictionary<int, char>[] rays = await Task.WhenAll(rayCastingTasks);
 
                 foreach (Dictionary<int, char> dictionary in rays)
                 {
@@ -98,7 +98,7 @@ namespace Game
                 }
 
                 //stats: place in map and FPS
-                char[] stats = $"X: {Math.Round(_playerX, 2)}, Y: {Math.Round(_playerY, 2)}, A: {Math.Round(_playerA%6, 2)}, FPS: {(int)(1 / elapsedTime)}".ToCharArray();
+                char[] stats = $"X: {Math.Round(_playerX, 2)}, Y: {Math.Round(_playerY, 2)}, A: {Math.Round(_playerA % 6, 2)}, FPS: {(int)(1 / elapsedTime)}".ToCharArray();
                 stats.CopyTo(Screen, 0);
 
                 //map
