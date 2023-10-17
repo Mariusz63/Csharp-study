@@ -1,4 +1,5 @@
-﻿namespace LabirintGame
+﻿using static System.Console;
+namespace LabirintGame
 {
     public class Player
     {
@@ -20,9 +21,9 @@
 
         public void CheckControls(double elapsedTime)
         {
-            if (Console.KeyAvailable)
+            if (KeyAvailable)
             {
-                ConsoleKey consoleKey = Console.ReadKey(true).Key;
+                ConsoleKey consoleKey = ReadKey(true).Key;
 
                 switch (consoleKey)
                 {
@@ -60,9 +61,9 @@
                             break;
                         }
 
-                    case ConsoleKey.Spacebar:
+                    case ConsoleKey.Escape:
                         {
-                            //Program.Start();
+                            GameMenu.PauseGame();
                             break;
                         }
                 }
