@@ -11,7 +11,7 @@ namespace LabirintGame
             SetBufferSize(menu.getScreenWidth(), menu.getScreenHeight());
             CursorVisible = false;
 
-            Player player = new Player(1.5, 1.5, 0);
+            Player player = new Player(1.5, 1.5, 0); // Create a new player and set player's initial position and angle
             menu.Start(player);
 
         }

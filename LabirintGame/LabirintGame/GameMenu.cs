@@ -1,19 +1,14 @@
 ﻿using MazeGenerator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
 
 namespace LabirintGame
 {
     public class GameMenu
     {
-
+        // Initialize MazeGenerator and other variables
         private static readonly Maze MazeGenerator = new Maze();
 
+        // Constants for screen dimensions and game settings
         private const int ScreenWidth = 120;
         private const int ScreenHeight = 60;
 
@@ -23,18 +18,18 @@ namespace LabirintGame
 
         private const double Depth = 16;
         private const double Fov = Math.PI / 3.5;
-
         private static bool isGameRunning = false; // Track the game state
         //public static void setIsGameRunning(bool  _isGameRunning) { isGameRunning = _isGameRunning; }
 
         public GameMenu() { }
 
+        // Start the main menu and the game loop
         public void Start(Player player)
         {
-            Title = "Paint Drying - The Game! ";
-           RunMainMenu(player);
+            RunMainMenu(player);
         }
 
+        // Handle game exit
         public static void ExitGame()
         {
             WriteLine("Are you sure you want to leave the game? ");
@@ -43,6 +38,7 @@ namespace LabirintGame
             Environment.Exit(0);
         }
 
+        // Display information about the game
         private void DisplayAboutInfo(Player player)
         {
             Clear();
@@ -52,6 +48,7 @@ namespace LabirintGame
             RunMainMenu(player);
         }
 
+        // Main menu and its options
         private void RunMainMenu(Player player)
         {
             string prompt = @"  
@@ -83,6 +80,7 @@ namespace LabirintGame
             }
         }
 
+        // Pause the game and display pause menu
         public static void PauseGame()
         {
             isGameRunning = true;
@@ -113,10 +111,41 @@ Game Paused. Select an option:";
                     break;
             }
         }
+        // Game over menu
+        public static void GameOver(Player player)
+        {
+            isGameRunning = false;
 
+            string resumePrompt = @"
+ ██████╗  █████╗ ███╗   ███╗███████╗     ██████╗ ██╗   ██╗███████╗██████╗ 
+██╔════╝ ██╔══██╗████╗ ████║██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔══██╗
+██║  ███╗███████║██╔████╔██║█████╗      ██║   ██║██║   ██║█████╗  ██████╔╝
+██║   ██║██╔══██║██║╚██╔╝██║██╔══╝      ██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗
+╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ╚██████╔╝ ╚████╔╝ ███████╗██║  ██║
+ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝     ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝
 
+Game over. Select an option:";
+            string[] resumeOptions = { "New game", "Exit" };
+            Menu resumeMenu = new Menu(resumePrompt, resumeOptions);
+            int selectedIndex = resumeMenu.Run();
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    StartGame(player);
+                    break;
+                case 1:
+                    ExitGame();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // Start the game
         public static void StartGame(Player player)
         {
+            // Initialize the game map, screen, opponents, and game loop
             Map.InitMap(MazeGenerator);
 
             var screen = new char[ScreenWidth * ScreenHeight];
@@ -125,15 +154,30 @@ Game Paused. Select an option:";
 
             isGameRunning = true; // Start the game
 
+            // Load a Answers to game
+            PasswordLoader loader = new PasswordLoader("passwords.txt");
+            List<string> passwords = loader.LoadPasswords();
+
+            // Choosing one answer
+            Answer answer = new Answer(passwords);
+            string currentPassword = answer.CurrentPassword;
+
             while (isGameRunning)
             {
-                
+                // Game loop logic (movement, rendering, etc.) goes here...
+
                 var dateTimeTo = DateTime.Now;
                 double elapsedTime = (dateTimeTo - dateTimeFrom).TotalSeconds;
                 dateTimeFrom = dateTimeTo;
 
+                //Update player 
                 player.CheckControls(elapsedTime);
 
+                if(player.getPlayerHP() <= 0) {
+                    GameMenu.GameOver(player);
+                }
+
+                // Raycasting and rendering the game world
                 for (int x = 0; x < ScreenWidth; x++)
                 {
                     double rayAngle = (player.getPlayerA() - Fov / 2) + x * Fov / ScreenWidth;
@@ -144,8 +188,6 @@ Game Paused. Select an option:";
                     double distanceToWall = 0;
                     bool hitWall = false;
                     bool isBound = false;
-
-
 
                     while (!hitWall && distanceToWall < Depth)
                     {
@@ -164,7 +206,7 @@ Game Paused. Select an option:";
                         {
                             char testCell = Map.map[testY * Map.mapWidth + testX];
 
-                            if (testCell == '#')
+                            if (testCell == '#' || testCell == '?')
                             {
                                 hitWall = true;
 
@@ -243,18 +285,20 @@ Game Paused. Select an option:";
                     }
                 }
 
-                //Stats
+                // Stats display
                 char[] stats = $"X: {Math.Round(player.getPlayerX(), 2)}; Y: {Math.Round(player.getPlayerY(), 2)}; A: {Math.Round(player.getPlayerA() % 6, 2)}; FPS: {(int)(1 / elapsedTime)}".ToCharArray();
                 stats.CopyTo(screen, 0);
-
+              
+                // Map display
                 Map.GetMap(screen, ScreenWidth);// map in corner
-
+                // Player position display
                 screen[(int)(player.getPlayerY() + 1) * ScreenWidth + (int)player.getPlayerX()] = 'P';
-
+                
+                // Update the screen
                 Console.SetCursorPosition(0, 0);
                 Console.Write(screen, 0, ScreenWidth * ScreenHeight);
             }
-        }
+        }          
     }
 }
 

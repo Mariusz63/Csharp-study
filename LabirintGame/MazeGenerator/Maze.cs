@@ -6,6 +6,7 @@ namespace MazeGenerator
     {
         private static readonly Random Random = new Random();
 
+        // Generate rooms
         public List<Room> Generate(int width, int height)
         {
             List<Room> rooms = new List<Room>();
@@ -82,7 +83,7 @@ namespace MazeGenerator
             return rooms;
         }
 
-        public char[,] GenerateCharMap(int width, int height, char wallChar, char emptyChar)
+        public char[,] GenerateCharMap(int width, int height, char wallChar, char emptyChar, char blockChar)
         {
             char[,] result = new char[width * 3 + 1, height * 3 + 1];
 
@@ -96,11 +97,15 @@ namespace MazeGenerator
 
             for (int i = 0; i < result.GetLength(1); i++)
             {
-                result[0, i] = wallChar;
+                // result[0, i] = wallChar;
+                bool res = RandRooms();
+                result[0, i] = res ? blockChar : wallChar;
+
             }
             for (int i = 0; i < result.GetLength(0); i++)
             {
-                result[i, 0] = wallChar;
+                bool res = RandRooms();
+                result[i, 0] = res ? blockChar : wallChar;
             }
 
             List<Room> roomMap = Generate(width, height);
@@ -125,6 +130,26 @@ namespace MazeGenerator
             }
 
             return result;
+        }
+
+        private bool RandRooms()
+        {
+            Random random = new Random();
+
+            // Generate a random number between 0 and 99
+            int randomNumber = random.Next(0, 100);
+
+            // Check if the random number falls within the 20% probability
+            bool is30Percent = randomNumber < 30;
+
+            if (is30Percent)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

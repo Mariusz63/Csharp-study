@@ -10,6 +10,7 @@ namespace LabirintGame
 
         public const char MapWall = '#';
         public const char MapEmpty = '.';
+        public const char BlockChar = '?';
 
         public static string map = "";
         public static int mapHeight = MazeHeight * 3 + 1;
@@ -20,7 +21,7 @@ namespace LabirintGame
         {
             StringBuilder MapBuilder = new StringBuilder();
 
-            char[,] map = maze.GenerateCharMap(MazeWidth, MazeHeight, MapWall, MapEmpty);
+            char[,] map = maze.GenerateCharMap(MazeWidth, MazeHeight, MapWall, MapEmpty, BlockChar);
 
             for (int y = 0; y < map.GetLength(1); y++)
             {
