@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using static System.Console;
+﻿using static System.Console;
 namespace LabirintGame
 {
     public class Player
@@ -81,7 +80,7 @@ namespace LabirintGame
                             GameMenu.PauseGame();
                             break;
                         }
-                    case ConsoleKey.E: 
+                    case ConsoleKey.E:
                         {
                             // Check if the player is near a wall with '?'
                             int testX = (int)playerX;

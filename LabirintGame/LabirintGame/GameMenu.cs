@@ -173,7 +173,8 @@ Game over. Select an option:";
                 //Update player 
                 player.CheckControls(elapsedTime);
 
-                if(player.getPlayerHP() <= 0) {
+                if (player.getPlayerHP() <= 0)
+                {
                     GameMenu.GameOver(player);
                 }
 
@@ -288,17 +289,24 @@ Game over. Select an option:";
                 // Stats display
                 char[] stats = $"X: {Math.Round(player.getPlayerX(), 2)}; Y: {Math.Round(player.getPlayerY(), 2)}; A: {Math.Round(player.getPlayerA() % 6, 2)}; FPS: {(int)(1 / elapsedTime)}".ToCharArray();
                 stats.CopyTo(screen, 0);
-              
+
                 // Map display
                 Map.GetMap(screen, ScreenWidth);// map in corner
                 // Player position display
                 screen[(int)(player.getPlayerY() + 1) * ScreenWidth + (int)player.getPlayerX()] = 'P';
-                
+
                 // Update the screen
                 Console.SetCursorPosition(0, 0);
                 Console.Write(screen, 0, ScreenWidth * ScreenHeight);
             }
-        }          
+        }
     }
 }
 
+/*  
+ * stworzyc samouczek
+ * dodac ekwipunek literek
+ * ma sie 3 proby odgadniecia hasla
+ * stworzyc 3 mini gry
+ * po wygraniu mini gierki gracz otrzymuje lososa literke
+ */

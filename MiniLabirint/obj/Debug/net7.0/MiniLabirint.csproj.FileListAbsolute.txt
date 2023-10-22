@@ -1,0 +1,14 @@
+F:\Projekty\C# study\Csharp-study\MiniLabirint\bin\Debug\net7.0\MiniLabirint.exe
+F:\Projekty\C# study\Csharp-study\MiniLabirint\bin\Debug\net7.0\MiniLabirint.deps.json
+F:\Projekty\C# study\Csharp-study\MiniLabirint\bin\Debug\net7.0\MiniLabirint.runtimeconfig.json
+F:\Projekty\C# study\Csharp-study\MiniLabirint\bin\Debug\net7.0\MiniLabirint.dll
+F:\Projekty\C# study\Csharp-study\MiniLabirint\bin\Debug\net7.0\MiniLabirint.pdb
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.AssemblyInfoInputs.cache
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.AssemblyInfo.cs
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.dll
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\refint\MiniLabirint.dll
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.pdb
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\MiniLabirint.genruntimeconfig.cache
+F:\Projekty\C# study\Csharp-study\MiniLabirint\obj\Debug\net7.0\ref\MiniLabirint.dll
