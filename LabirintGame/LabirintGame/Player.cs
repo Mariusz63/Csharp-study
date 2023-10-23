@@ -1,4 +1,5 @@
 ﻿using static System.Console;
+
 namespace LabirintGame
 {
     public class Player
@@ -7,7 +8,7 @@ namespace LabirintGame
         private static double playerX = 1.5;
         private static double playerY = 1.5;
         private static double playerA = 0;
-        private double HP = 100;
+        private double HP = 5;
         private static int keys = 0;
 
         public double getPlayerX() { return playerX; }
@@ -71,8 +72,9 @@ namespace LabirintGame
                         }
                     case ConsoleKey.Spacebar:
                         {
-
-                            //  logic
+                            Random random = new Random();
+                            int select = random.Next(0, 3);
+                            SelectGame.Switch(select);
                             break;
                         }
                     case ConsoleKey.Escape:
@@ -106,8 +108,17 @@ namespace LabirintGame
         // Start another game
         private void StartAnotherGame()
         {
-            // You can create a new instance of the game or implement a different gameplay here.
-            // For example, you can create a new maze or any other game scenario.
+
+            Random rand = new Random();
+            bool answer = SelectGame.Switch(rand.Next(0, 3));
+            if (answer)
+            {
+                keys++;
+            }
+            else
+            {
+                HP--;
+            }
         }
 
     }

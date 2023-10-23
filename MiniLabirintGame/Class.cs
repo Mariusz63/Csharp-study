@@ -1,12 +1,21 @@
-﻿namespace MiniLabirint
-{
-    public class Program
-    {
-        private static int mazeSize = 10;
-        private static char[,] maze;
-        private static Random random = new Random();
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-        public static bool Main()
+namespace MiniLabirintGame
+{
+    public class Class
+    {
+        static int mazeSize = 10;
+        static char[,] maze;
+        static Random random = new Random();
+
+        public Class() { }
+
+
+        public bool Game()
         {
             InitializeMaze();
             GenerateMaze(new Position(1, 1));
@@ -45,16 +54,12 @@
                         newPlayerX++;
                         break;
                     case 'q':
-                        Environment.Exit(0);
-                        break;
+                        return false; // You lose
                 }
 
                 if (newPlayerX == exitX && newPlayerY == exitY)
                 {
-                    Console.Clear();
-                    DisplayMaze(newPlayerX, newPlayerY);
-                    Console.WriteLine("Congratulations! You've reached the exit.");
-                    return true;
+                    return true; // You win
                 }
 
                 if (newPlayerX >= 1 && newPlayerX < mazeSize - 1 &&
@@ -65,7 +70,6 @@
                     playerY = newPlayerY;
                 }
             }
-            return false;
         }
 
         static void InitializeMaze()
@@ -115,10 +119,10 @@
 
             Position[] possibleNeighbors = new Position[]
             {
-            new Position(current.X, current.Y - 2),
-            new Position(current.X, current.Y + 2),
-            new Position(current.X - 2, current.Y),
-            new Position(current.X + 2, current.Y),
+                new Position(current.X, current.Y - 2),
+                new Position(current.X, current.Y + 2),
+                new Position(current.X - 2, current.Y),
+                new Position(current.X + 2, current.Y),
             };
 
             foreach (Position neighbor in possibleNeighbors)
@@ -181,6 +185,4 @@
             Y = y;
         }
     }
-
-
 }

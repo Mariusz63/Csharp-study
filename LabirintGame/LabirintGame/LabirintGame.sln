@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabirintGame", "LabirintGam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeGenerator", "..\MazeGenerator\MazeGenerator.csproj", "{A3B54F0E-FC22-49DA-AE0C-A91959A31B48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLabirint", "..\..\MiniLabirint\MiniLabirint.csproj", "{824AD53B-719F-4666-BC05-C7C0341E2144}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLabirintGame", "..\..\MiniLabirintGame\MiniLabirintGame.csproj", "{88248F5C-6869-4C73-9ACE-96BA7C4CC2BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{A3B54F0E-FC22-49DA-AE0C-A91959A31B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3B54F0E-FC22-49DA-AE0C-A91959A31B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3B54F0E-FC22-49DA-AE0C-A91959A31B48}.Release|Any CPU.Build.0 = Release|Any CPU
-		{824AD53B-719F-4666-BC05-C7C0341E2144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{824AD53B-719F-4666-BC05-C7C0341E2144}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{824AD53B-719F-4666-BC05-C7C0341E2144}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{824AD53B-719F-4666-BC05-C7C0341E2144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88248F5C-6869-4C73-9ACE-96BA7C4CC2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88248F5C-6869-4C73-9ACE-96BA7C4CC2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88248F5C-6869-4C73-9ACE-96BA7C4CC2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88248F5C-6869-4C73-9ACE-96BA7C4CC2BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

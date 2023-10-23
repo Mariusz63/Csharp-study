@@ -12,14 +12,13 @@
           "bin/placeholder/MazeGenerator.dll": {}
         }
       },
-      "MiniLabirint/1.0.0": {
+      "MiniLabirintGame/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/MiniLabirint.dll": {}
+          "bin/placeholder/MiniLabirintGame.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MiniLabirint.dll": {}
+          "bin/placeholder/MiniLabirintGame.dll": {}
         }
       }
     }
@@ -30,16 +29,16 @@
       "path": "../MazeGenerator/MazeGenerator.csproj",
       "msbuildProject": "../MazeGenerator/MazeGenerator.csproj"
     },
-    "MiniLabirint/1.0.0": {
+    "MiniLabirintGame/1.0.0": {
       "type": "project",
-      "path": "../../MiniLabirint/MiniLabirint.csproj",
-      "msbuildProject": "../../MiniLabirint/MiniLabirint.csproj"
+      "path": "../../MiniLabirintGame/MiniLabirintGame.csproj",
+      "msbuildProject": "../../MiniLabirintGame/MiniLabirintGame.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "MazeGenerator >= 1.0.0",
-      "MiniLabirint >= 1.0.0"
+      "MiniLabirintGame >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -78,8 +77,8 @@
             "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj": {
               "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj"
             },
-            "F:\\Projekty\\C# study\\Csharp-study\\MiniLabirint\\MiniLabirint.csproj": {
-              "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\MiniLabirint\\MiniLabirint.csproj"
+            "F:\\Projekty\\C# study\\Csharp-study\\MiniLabirintGame\\MiniLabirintGame.csproj": {
+              "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\MiniLabirintGame\\MiniLabirintGame.csproj"
             }
           }
         }

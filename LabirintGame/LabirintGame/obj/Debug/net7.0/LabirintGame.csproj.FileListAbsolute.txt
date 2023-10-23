@@ -16,3 +16,5 @@ F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\obj\Debug\net7.0\ref
 F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\obj\Debug\net7.0\LabirintGame.pdb
 F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\obj\Debug\net7.0\LabirintGame.genruntimeconfig.cache
 F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\obj\Debug\net7.0\ref\LabirintGame.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\bin\Debug\net7.0\MiniLabirintGame.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\LabirintGame\bin\Debug\net7.0\MiniLabirintGame.pdb
