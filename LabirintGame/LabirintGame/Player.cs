@@ -8,17 +8,11 @@ namespace LabirintGame
         private static double playerX = 1.5;
         private static double playerY = 1.5;
         private static double playerA = 0;
-        private double HP = 5;
-        private static int keys = 0;
 
         public double getPlayerX() { return playerX; }
         public double getPlayerY() { return playerY; }
         public double getPlayerA() { return playerA; }
-        public double getPlayerHP() { return HP; }
 
-        public void setPlayerHP(double hp) { HP = hp; }
-        public void setKeys(int _keys) { keys = _keys; }
-        public int getKeys() { return keys; }
 
 
         public Player() { }
@@ -98,12 +92,6 @@ namespace LabirintGame
             }
         }
 
-        // Check if the player is near the '?'
-        private bool IsPlayerNearSign(int testX, int testY, double playerX, double playerY)
-        {
-            int signDetectionRadius = 2; // Adjust this radius as needed
-            return Math.Abs(playerX - testX) <= signDetectionRadius && Math.Abs(playerY - testY) <= signDetectionRadius;
-        }
 
         // Start another game
         private void StartAnotherGame()
@@ -113,11 +101,11 @@ namespace LabirintGame
             bool answer = SelectGame.Switch(rand.Next(0, 3));
             if (answer)
             {
-                keys++;
+
             }
             else
             {
-                HP--;
+
             }
         }
 

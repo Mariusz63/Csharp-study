@@ -159,8 +159,9 @@ Game over. Select an option:";
             List<string> passwords = loader.LoadPasswords();
 
             // Choosing one answer
-            Answer answer = new Answer(passwords);
+            Answer answer = new Answer();
             string currentPassword = answer.CurrentPassword;
+            WordsGame game = new WordsGame(5, answer.CurrentPassword);
 
             while (isGameRunning)
             {
@@ -173,10 +174,6 @@ Game over. Select an option:";
                 //Update player 
                 player.CheckControls(elapsedTime);
 
-                if (player.getPlayerHP() <= 0)
-                {
-                    GameMenu.GameOver(player);
-                }
 
                 // Raycasting and rendering the game world
                 for (int x = 0; x < ScreenWidth; x++)

@@ -7,11 +7,10 @@
 
         public string CurrentPassword { get; private set; }
 
-        public Answer(List<string> passwords)
+        public Answer()
         {
-            this.passwords = passwords;
-            random = new Random();
-            SetRandomPassword();
+            WordListLoader wordListLoader = new WordListLoader("Words/Words.txt");
+            passwords = wordListLoader.LoadWords();
         }
 
         public void SetRandomPassword()

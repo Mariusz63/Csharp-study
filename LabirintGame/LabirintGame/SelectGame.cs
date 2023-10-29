@@ -1,5 +1,4 @@
-﻿using MiniLabirintGame;
-namespace LabirintGame
+﻿namespace LabirintGame
 {
     public class SelectGame
     {
