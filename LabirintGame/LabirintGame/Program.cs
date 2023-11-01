@@ -3,7 +3,7 @@ namespace LabirintGame
 {
     public class Program
     {
-        static void Main()
+        public static void Main()
         {
             GameMenu menu = new GameMenu();
 

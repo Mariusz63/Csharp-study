@@ -1,4 +1,5 @@
 ﻿using MazeGenerator;
+using System.Numerics;
 using static System.Console;
 
 namespace LabirintGame
@@ -142,6 +143,36 @@ Game over. Select an option:";
             }
         }
 
+        public static void GameWin()
+        {
+            isGameRunning = false;
+
+            string resumePrompt = @"
+██╗   ██╗██╗ ██████╗████████╗ ██████╗ ██████╗ ██╗   ██╗
+██║   ██║██║██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗╚██╗ ██╔╝
+██║   ██║██║██║        ██║   ██║   ██║██████╔╝ ╚████╔╝ 
+╚██╗ ██╔╝██║██║        ██║   ██║   ██║██╔══██╗  ╚██╔╝  
+ ╚████╔╝ ██║╚██████╗   ██║   ╚██████╔╝██║  ██║   ██║   
+  ╚═══╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   
+
+You won!!! Select an option:";
+            string[] resumeOptions = { "New game", "Exit" };
+            Menu resumeMenu = new Menu(resumePrompt, resumeOptions);
+            int selectedIndex = resumeMenu.Run();
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    Program.Main();
+                    break;
+                case 1:
+                    ExitGame();
+                    break;
+                default:
+                    break;
+            }
+        }
+
         // Start the game
         public static void StartGame(Player player)
         {
@@ -154,10 +185,7 @@ Game over. Select an option:";
 
             isGameRunning = true; // Start the game
 
-            if(player.isWinWordsGame() == 0)
-            {
-                GameOver(player);
-            }
+           
 
 
             while (isGameRunning)
@@ -171,7 +199,14 @@ Game over. Select an option:";
                 //Update player 
                 player.CheckControls(elapsedTime);
 
+                if (player.isWinWordsGame() == 0)
+                {
+                    GameOver(player);
+                }
+                else if (player.isWinWordsGame() == 2)
+                {
 
+                }
 
 
                 // Raycasting and rendering the game world

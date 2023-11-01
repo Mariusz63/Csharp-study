@@ -37,20 +37,18 @@ namespace LabirintGame
 
         public void Game()
         {
-                
-                char[] passwordToGuess = startPassword.ToCharArray();
-                List<char> keys = new List<char>(passwordToGuess); // Inicjalizacja kluczy
 
-                // Przetasuj litery w kluczach, aby były losowo rozmieszczone
-                Random random = new Random();
+                 List<char> availableLetters = startPassword.Take(countLetters).ToList();
+            // Przetasuj litery w kluczach, aby były losowo rozmieszczone
+            Random random = new Random();
                 int n = countLetters;
                 while (n > 0)
                 {
                     n--;
                     int k = random.Next(n + 1);
-                    char temp = keys[k];
-                    keys[k] = keys[n];
-                    keys[n] = temp;
+                    char temp = availableLetters[k];
+                availableLetters[k] = availableLetters[n];
+                availableLetters[n] = temp;
                 }
                 
 
@@ -60,8 +58,10 @@ namespace LabirintGame
                 WriteLine("Twoje zadanie to odgadnięcie hasła za pomocą dostępnych liter.");
                 WriteLine($"Masz {attempts} prób, aby odgadnąć hasło.");
 
-                WriteLine("\nDostępne litery: " + string.Join(" ", keys));
-                    WriteLine("\nPodaj całe hasło: ");
+                
+                WriteLine("\nDostępne litery: " + string.Join(" ", availableLetters));
+
+                WriteLine("Podaj całe hasło: ");
                     string guess = ReadLine().ToUpper();
 
                     if (guess == startPassword.ToUpper())
@@ -69,9 +69,9 @@ namespace LabirintGame
                         isWin = 2;
                         break;
                     }
-                    else if (guess.Length == 1 && keys.Contains(guess[0]))
+                    else if (guess.Length == 1 && availableLetters.Contains(guess[0]))
                     {
-                        keys.Remove(guess[0]);
+                    availableLetters.Remove(guess[0]);
                         WriteLine("Poprawna litera!");
                     }
                     else
@@ -83,14 +83,18 @@ namespace LabirintGame
                     if (KeyAvailable) // Check if a key is available to be read
                     {
                         ConsoleKeyInfo keyInfo = ReadKey(true);
-                        if (keyInfo.Key == ConsoleKey.Escape)
+                        if (keyInfo.Key == ConsoleKey.Q)
                         {
-                            // Handle the ESCAPE key to exit the mini-game and return to the main game
-                            break;
+                        ReadKey(); // Oczekiwanie na dowolny klawisz przed wyjściem
+                        // Handle the ESCAPE key to exit the mini-game and return to the main game
+                        Environment.Exit(0); // Wyjście z programu
+                        break;
                         }
                     }
+                if (attempts <= 0)
+                { isWin = 0;  }
 
-                }
+            }
            
         }
 
@@ -102,7 +106,7 @@ namespace LabirintGame
         public void reduceAttempts()
         {
             attempts--;
-            if (attempts < 0) 
+            if (attempts <= 0) 
                 { isWin = 0; }
         }
     }
