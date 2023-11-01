@@ -8,3 +8,5 @@ woda
 szkola
 chmura
 wiatr
+armagedon
+

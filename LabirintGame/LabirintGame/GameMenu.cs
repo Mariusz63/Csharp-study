@@ -154,14 +154,11 @@ Game over. Select an option:";
 
             isGameRunning = true; // Start the game
 
-            // Load a Answers to game
-            PasswordLoader loader = new PasswordLoader("passwords.txt");
-            List<string> passwords = loader.LoadPasswords();
+            if(player.isWinWordsGame() == 0)
+            {
+                GameOver(player);
+            }
 
-            // Choosing one answer
-            Answer answer = new Answer();
-            string currentPassword = answer.CurrentPassword;
-            WordsGame game = new WordsGame(5, answer.CurrentPassword);
 
             while (isGameRunning)
             {
@@ -173,6 +170,8 @@ Game over. Select an option:";
 
                 //Update player 
                 player.CheckControls(elapsedTime);
+
+
 
 
                 // Raycasting and rendering the game world
@@ -293,8 +292,8 @@ Game over. Select an option:";
                 screen[(int)(player.getPlayerY() + 1) * ScreenWidth + (int)player.getPlayerX()] = 'P';
 
                 // Update the screen
-                Console.SetCursorPosition(0, 0);
-                Console.Write(screen, 0, ScreenWidth * ScreenHeight);
+                SetCursorPosition(0, 0);
+                Write(screen, 0, ScreenWidth * ScreenHeight);
             }
         }
     }

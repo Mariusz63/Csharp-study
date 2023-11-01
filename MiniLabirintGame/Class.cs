@@ -19,8 +19,6 @@ namespace MiniLabirintGame
             EnsureExitSafety();
             DisplayMaze();
 
-            Console.WriteLine("Welcome to the Random Maze Game!");
-            Console.WriteLine("Find your way from 'S' to 'E'. Use WASD keys to move.");
 
             int playerX = 1;
             int playerY = 1;
@@ -30,6 +28,8 @@ namespace MiniLabirintGame
             while (true)
             {
                 DisplayMaze(playerX, playerY);
+                Console.WriteLine("Witaj w Random Maze Game!");
+                Console.WriteLine("Znajdz wyjscie z labiryntu. Uzywaj przyciskow AWSD do poruszania sie.");
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
                 char key = keyInfo.KeyChar;
 

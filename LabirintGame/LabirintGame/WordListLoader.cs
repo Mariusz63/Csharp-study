@@ -12,6 +12,7 @@
 
         public List<string> LoadWords()
         {
+
             try
             {
                 // Sprawdź, czy plik istnieje

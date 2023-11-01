@@ -9,19 +9,29 @@ namespace LabirintGame
         private static double playerY = 1.5;
         private static double playerA = 0;
 
+        private WordsGame game; 
+
+
         public double getPlayerX() { return playerX; }
         public double getPlayerY() { return playerY; }
         public double getPlayerA() { return playerA; }
 
 
+        public int isWinWordsGame()
+        {
+            return game.IsWin();
+        }
 
         public Player() { }
-        public Player(double _playerX, double _playerY, double _playerA)
+        public Player(double _playerX, double _playerY, double _playerA, WordsGame game)
         {
             playerA = _playerA;
             playerX = _playerX;
             playerY = _playerY;
+            this.game = game;
         }
+
+       
 
         public void CheckControls(double elapsedTime)
         {
@@ -88,6 +98,11 @@ namespace LabirintGame
                             }
                             break;
                         }
+                    case ConsoleKey.R: 
+                        {
+                            game.Game();
+                            break; 
+                        }
                 }
             }
         }
@@ -99,13 +114,13 @@ namespace LabirintGame
 
             Random rand = new Random();
             bool answer = SelectGame.Switch(rand.Next(0, 3));
-            if (answer)
+            if (answer == true)
             {
-
+                game.addLetter();
             }
             else
             {
-
+                game.reduceAttempts();
             }
         }
 
