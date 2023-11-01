@@ -54,14 +54,14 @@ namespace LabirintGame
             while (attempts > 0)
             {
                 Clear();
-                WriteLine("Twoje zadanie to odgadnięcie hasła za pomocą dostępnych liter.");
-                WriteLine($"Masz {attempts} prób, aby odgadnąć hasło.");
-                WriteLine("Nacisnij przycisk ENTER aby wujsc z programu");
+                WriteLine("Your task is to guess the password using the available letters.");
+                WriteLine($"You have {attempts} attempts to guess the password.");
+                WriteLine("Press ESC and ENTER to exit the game");
 
 
-                WriteLine("\nDostępne litery: " + string.Join(" ", availableLetters));
+                WriteLine("\nAvailable letters: " + string.Join(" ", availableLetters));
 
-                WriteLine("Podaj całe hasło: ");
+                WriteLine("Enter the entire password: ");
                 string guess = ReadLine().ToUpper();
                 ConsoleKeyInfo keyInfo = ReadKey(true);
                 if (guess == startPassword.ToUpper())
@@ -72,22 +72,19 @@ namespace LabirintGame
                 else if (guess.Length == 1 && availableLetters.Contains(guess[0]))
                 {
                     availableLetters.Remove(guess[0]);
-                    WriteLine("Poprawna litera!");
+                    WriteLine("Correct letter!");
                 }
                 else if (keyInfo.Key == ConsoleKey.Escape)
                 {
-                    WriteLine("Nacisnij ENTER");
+                    WriteLine("Press ENTER");
                     return;
                 }
                 else
                 {
-                    WriteLine("Błędna litera lub hasło.");
+                    WriteLine("Incorrect letter or password.");
                     reduceAttempts();
                 }
-
-                
-               
-
+                           
                 if (attempts <= 0)
                 { isWin = 0; }
 
@@ -97,7 +94,7 @@ namespace LabirintGame
 
         public void addLetter()
         {
-            countLetters++;
+            ++countLetters;
         }
 
         public void reduceAttempts()

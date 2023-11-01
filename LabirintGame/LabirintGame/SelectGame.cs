@@ -16,8 +16,8 @@
             switch (select)
             {
                 case 0:
-                    MiniLabirintGame.Class game1 = new MiniLabirintGame.Class();
-                    result = game1.Game();
+                   // MiniLabirintGame.Class game1 = new MiniLabirintGame.Class();
+                   // result = game1.Game();
                     break;
                 case 1:
                     GuessNumber.GuessNum game2 = new GuessNumber.GuessNum();
