@@ -4,6 +4,21 @@
     "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\LabirintGame\\LabirintGame.csproj": {}
   },
   "projects": {
+    "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj",
+        "projectName": "GuessNumber",
+        "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\LabirintGame\\LabirintGame.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,6 +48,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj": {
+                "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj"
+              },
               "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj": {
                 "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj"
               },

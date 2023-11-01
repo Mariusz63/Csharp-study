@@ -9,7 +9,7 @@ namespace LabirintGame
         private static double playerY = 1.5;
         private static double playerA = 0;
 
-        private WordsGame game; 
+        private WordsGame game;
 
 
         public double getPlayerX() { return playerX; }
@@ -31,7 +31,7 @@ namespace LabirintGame
             this.game = game;
         }
 
-       
+
 
         public void CheckControls(double elapsedTime)
         {
@@ -98,10 +98,10 @@ namespace LabirintGame
                             }
                             break;
                         }
-                    case ConsoleKey.R: 
+                    case ConsoleKey.R:
                         {
                             game.Game();
-                            break; 
+                            break;
                         }
                 }
             }

@@ -1,5 +1,4 @@
 ﻿using MazeGenerator;
-using System.Numerics;
 using static System.Console;
 
 namespace LabirintGame
@@ -185,7 +184,7 @@ You won!!! Select an option:";
 
             isGameRunning = true; // Start the game
 
-           
+
 
 
             while (isGameRunning)

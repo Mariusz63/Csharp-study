@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "GuessNumber/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/GuessNumber.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GuessNumber.dll": {}
+        }
+      },
       "MazeGenerator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -24,6 +33,11 @@
     }
   },
   "libraries": {
+    "GuessNumber/1.0.0": {
+      "type": "project",
+      "path": "../GuessNumber/GuessNumber.csproj",
+      "msbuildProject": "../GuessNumber/GuessNumber.csproj"
+    },
     "MazeGenerator/1.0.0": {
       "type": "project",
       "path": "../MazeGenerator/MazeGenerator.csproj",
@@ -37,6 +51,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "GuessNumber >= 1.0.0",
       "MazeGenerator >= 1.0.0",
       "MiniLabirintGame >= 1.0.0"
     ]
@@ -74,6 +89,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj": {
+              "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\GuessNumber\\GuessNumber.csproj"
+            },
             "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj": {
               "projectPath": "F:\\Projekty\\C# study\\Csharp-study\\LabirintGame\\MazeGenerator\\MazeGenerator.csproj"
             },

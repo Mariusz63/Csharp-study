@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\MiniLabirintGame\MiniLabirintGame.csproj" />
+    <ProjectReference Include="..\GuessNumber\GuessNumber.csproj" />
     <ProjectReference Include="..\MazeGenerator\MazeGenerator.csproj" />
   </ItemGroup>
 

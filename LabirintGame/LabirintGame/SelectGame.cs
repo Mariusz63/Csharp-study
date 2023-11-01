@@ -16,10 +16,12 @@
             switch (select)
             {
                 case 0:
-                    MiniLabirintGame.Class game = new MiniLabirintGame.Class();
-                    result = game.Game();
+                    MiniLabirintGame.Class game1 = new MiniLabirintGame.Class();
+                    result = game1.Game();
                     break;
                 case 1:
+                    GuessNumber.GuessNum game2 = new GuessNumber.GuessNum();
+                    result = game2.Main();
                     break;
                 case 2:
                     break;
