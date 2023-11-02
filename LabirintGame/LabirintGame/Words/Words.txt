@@ -9,4 +9,9 @@ szkola
 chmura
 wiatr
 armagedon
-
+komputer
+czlowiek
+aplikacja
+cwiczenia
+kogut
+arytmetyka

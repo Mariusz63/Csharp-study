@@ -74,13 +74,6 @@ namespace LabirintGame
 
                             break;
                         }
-                    case ConsoleKey.Spacebar:
-                        {
-                            Random random = new Random();
-                            int select = random.Next(0, 3);
-                            SelectGame.Switch(select);
-                            break;
-                        }
                     case ConsoleKey.Escape:
                         {
                             GameMenu.PauseGame();
@@ -91,7 +84,7 @@ namespace LabirintGame
                             // Check if the player is near a wall with '?'
                             int testX = (int)playerX;
                             int testY = (int)playerY;
-                            if (Map.map[testY * Map.mapWidth + testX] == '?')
+                            if (Map.map[testY * Map.mapWidth + testX]+1 <= '?')
                             {
                                 // Start another game
                                 StartAnotherGame();
@@ -113,10 +106,10 @@ namespace LabirintGame
         {
 
             Random rand = new Random();
-            bool answer = SelectGame.Switch(rand.Next(0, 3));
-            if (answer == true)
+            bool answer = true;
+            if (answer == SelectGame.Switch(rand.Next(0, 3)))
             {
-                game.addLetter();
+                game.addLetter(1);
             }
             else
             {

@@ -18,23 +18,18 @@
                 case 0:
                     MiniLabirintGame.Class game1 = new MiniLabirintGame.Class();
                     result = game1.Game();
-                    break;
+                    return result;
                 case 1:
                     GuessNumber.GuessNum game2 = new GuessNumber.GuessNum();
                     result = game2.Main();
-                    break;
+                    return result;
                 case 2:
                     break;
                 default:
                     break;
 
             }
-
-            if (result)
-            {
-                return true;
-            }
-            return false;
+            return result;
         }
     }
 }

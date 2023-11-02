@@ -92,9 +92,9 @@ namespace LabirintGame
 
         }
 
-        public void addLetter()
+        public void addLetter(int x)
         {
-            ++countLetters;
+            countLetters+= x;
         }
 
         public void reduceAttempts()

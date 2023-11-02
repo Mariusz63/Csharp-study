@@ -30,7 +30,7 @@ namespace GuessNumber
                         {
                             WriteLine("The number drawn is smaller.");
                         }
-                        else
+                        else if(guess == targetNumber)
                         {
                             WriteLine($"Way to go! The number drawn is {targetNumber}. You guessed it in {attempts} attempts.");
                             WriteLine("Congratulations!");
