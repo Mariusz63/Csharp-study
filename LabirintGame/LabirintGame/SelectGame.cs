@@ -20,9 +20,9 @@
                     result = game1.Game();
                     return result;
                 case 1:
-                    GuessNumber.GuessNum game2 = new GuessNumber.GuessNum();
-                    result = game2.Main();
-                    return result;
+                    //GuessNumber.GuessNum game2 = new GuessNumber.GuessNum();
+                   // result = game2.Main();
+                    //return result;
                 case 2:
                     break;
                 default:

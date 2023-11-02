@@ -113,7 +113,7 @@ namespace LabirintGame
             }
             else
             {
-                game.reduceAttempts();
+               // game.reduceAttempts();
             }
         }
 

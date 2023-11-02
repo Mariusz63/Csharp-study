@@ -204,7 +204,7 @@ You won!!! Select an option:";
                 }
                 else if (player.isWinWordsGame() == 2)
                 {
-
+                    GameWin();
                 }
 
 
