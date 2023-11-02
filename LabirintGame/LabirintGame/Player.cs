@@ -84,7 +84,7 @@ namespace LabirintGame
                             // Check if the player is near a wall with '?'
                             int testX = (int)playerX;
                             int testY = (int)playerY;
-                            if (Map.map[testY * Map.mapWidth + testX]+1 <= '?')
+                            if (Map.map[testY * Map.mapWidth + testX] <= '?')
                             {
                                 // Start another game
                                 StartAnotherGame();

@@ -41,6 +41,11 @@ namespace LabirintGame
             // Przetasuj litery w kluczach, aby były losowo rozmieszczone
             Random random = new Random();
             int n = countLetters;
+            if(countLetters > availableLetters.Count)
+            {
+                n = availableLetters.Count;
+            }
+
             while (n > 0)
             {
                 n--;
