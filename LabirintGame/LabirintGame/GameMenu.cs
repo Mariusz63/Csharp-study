@@ -184,9 +184,6 @@ You won!!! Select an option:";
 
             isGameRunning = true; // Start the game
 
-
-
-
             while (isGameRunning)
             {
                 // Game loop logic (movement, rendering, etc.) goes here...
@@ -332,11 +329,3 @@ You won!!! Select an option:";
         }
     }
 }
-
-/*  
- * stworzyc samouczek
- * dodac ekwipunek literek
- * ma sie 3 proby odgadniecia hasla
- * stworzyc 3 mini gry
- * po wygraniu mini gierki gracz otrzymuje lososa literke
- */
