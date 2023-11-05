@@ -1,0 +1,6 @@
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\bin\Release\MiniLabirintGame.dll
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\bin\Release\MiniLabirintGame.pdb
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\obj\Release\MiniLabirintGame.csproj.AssemblyReference.cache
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\obj\Release\MiniLabirintGame.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\obj\Release\MiniLabirintGame.dll
+F:\Projekty\C# study\Csharp-study\MiniLabirintGame\obj\Release\MiniLabirintGame.pdb

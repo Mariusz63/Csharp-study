@@ -14,7 +14,7 @@ namespace LabirintGame
 
         public int getScreenWidth() { return ScreenWidth; }
         public int getScreenHeight() { return ScreenHeight; }
-
+       
 
         private const double Depth = 16;
         private const double Fov = Math.PI / 3.5;
@@ -327,6 +327,9 @@ You won!!! Select an option:";
                 SetCursorPosition(0, 0);
                 Write(screen, 0, ScreenWidth * ScreenHeight);
             }
+
+
         }
+
     }
 }

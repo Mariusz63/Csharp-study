@@ -1,0 +1,6 @@
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\bin\Release\GuessNumber.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\bin\Release\GuessNumber.pdb
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\obj\Release\GuessNumber.csproj.AssemblyReference.cache
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\obj\Release\GuessNumber.csproj.CoreCompileInputs.cache
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\obj\Release\GuessNumber.dll
+F:\Projekty\C# study\Csharp-study\LabirintGame\GuessNumber\obj\Release\GuessNumber.pdb

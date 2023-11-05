@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LabirintGame/1.0.0": {
+        "dependencies": {
+          "GuessNumber": "1.0.0",
+          "MazeGenerator": "1.0.0",
+          "MiniLabirintGame": "1.0.0"
+        },
+        "runtime": {
+          "LabirintGame.dll": {}
+        }
+      },
+      "GuessNumber/1.0.0": {
+        "runtime": {
+          "GuessNumber.dll": {}
+        }
+      },
+      "MazeGenerator/1.0.0": {
+        "runtime": {
+          "MazeGenerator.dll": {}
+        }
+      },
+      "MiniLabirintGame/1.0.0": {
+        "runtime": {
+          "MiniLabirintGame.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LabirintGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GuessNumber/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MazeGenerator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MiniLabirintGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
