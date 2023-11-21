@@ -22,18 +22,18 @@
 
         public void SetRandomPassword()
         {
-            int passCount = passwords.Count;
-            if (passCount > 0)
-            {
-                random = new Random();
-                int index = random.Next(0, passCount);
-                CurrentPassword = passwords[index];
-            }
-            else
-            {
-                CurrentPassword = "admin";
-            }
-
+            //int passCount = passwords.Count;
+            //if (passCount > 0)
+            //{
+            //    random = new Random();
+            //    int index = random.Next(0, passCount);
+            //    CurrentPassword = passwords[index];
+            //}
+            //else
+            //{
+                
+            //}
+            CurrentPassword = "admin";
         }
     }
 
